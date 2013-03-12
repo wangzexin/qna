@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+<head>
+  <link rel = "stylesheet" href="/static/style.css" type='text/css'/>
+</head>
+<body background='/static/questionmark.jpg'>
+  <div id='welcome'>
+	<form method='post' id='form'>
+		<textarea name='keyword' value={{keyword}}>{{keyword}}</textarea>
+		<input type='submit' value='Search' />
+	</form>
+	<h1 id='title'>Hello, {{username}}</h1>
+	<div id='atag'><a href='post'><img id='post' src='/static/post.jpg' height=75 width=100/></a></div>
+  </div>
+  {% for q in questions %}
+  <a href='/view/{{q.sid}}'><div class='block'>
+	{{q.title}}
+  </div></a>
+  {% endfor %}
+  {% if questions %}
+  <a href='/delete'>
+  <p id='deleteq'>Want to delete your posted question?</p>
+  <img id='delete' src='/static/delete.jpg' height=65 width=80/>
+  </a>
+  {% endif %}
+</body>
+</html>

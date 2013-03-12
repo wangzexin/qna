@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+<head>
+  <link rel = "stylesheet" href="/static/style.css" type='text/css' />
+</head>
+<body background='/static/questionmark.jpg'>
+  <div class='adiv'>
+	<h2>Try and help your friend</h2>
+  </div>
+  <div class='adiv'>
+    <h3>Title of the question</h3>
+	<textarea name='title' value='{{title}}'>{{title}}</textarea>
+  </div>
+  <div class='adiv'>
+    <h3>Description of the question</h3>
+	<textarea class='atext' name='description' value='{{description}}'>{{description}}</textarea>
+  </div>
+  <div class='adiv'>
+    <h3>Specifics of the question</h3>
+	<textarea class='atext' name='content' value='{{content}}'>{{content}}</textarea>
+  </div>
+  <form class='adiv' method='post'>
+	<h3>Type in your solution</h3>
+	<textarea class='atext' name='solution' value='{{solution}}'>{{solution}}</textarea>
+	<input type='submit' value='Answer' />
+  </form>
+  <div class='adiv'>
+	{% if answers %}<h3>View the other answers below:</h3>{% endif %}
+  </div>
+  <form>
+    {% for answer in answers %}
+    <div class='answersdiv'>
+      <p>{{answer}}</p>
+    </div>
+    {% endfor %}
+  </form>
+  <img class='postpage' src='/static/postpage.jpg'/>
+</body>
+</html>

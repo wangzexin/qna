@@ -1,0 +1,154 @@
+#welcome {
+	height: 10%;
+	width: 80%;
+}
+
+#title {
+	text-align: left;
+	left: 5%;
+	position: absolute;
+	top: 3%;
+	font-style: italic;
+	color: white;
+}
+
+#delete {
+	position: absolute;
+	top: 3%;
+	left: 90%;
+}
+
+#deleteq {
+	position: aboslute;
+	top: 4%;
+	left: 95%;
+	color: white;
+	z-index: 2;
+}
+
+.block {
+	font-family:"Times New Roman", Times, serif;
+	display:block;
+	color:white;
+	float:left;
+	font-size:20px;
+	margin-left:50px;
+	margin-top:45px;
+	width:19%;
+	height:32%;
+	overflow:hidden;
+	-webkit-border-radius: 16px; 
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+	opacity:0.4;
+	background-color: black;
+	-webkit-transition: all .2s ease;
+  	-moz-transition: all .2s ease;
+  	-ms-transition: all .2s ease;
+  	-o-transition: all .2s ease;
+  	transition: all .2s ease;
+}
+
+.block:hover {
+	opacity:.9;
+	-webkit-transition: all .2s ease;
+  	-moz-transition: all .2s ease;
+  	-ms-transition: all .2s ease;
+  	-o-transition: all .2s ease;
+  	transition: all .2s ease;
+}
+
+#form {
+	position: absolute;
+	left: 55%;
+	top: 5%;
+}
+
+#atag {
+	position: absolute;
+	left: 80%;
+	top: 5%;
+}
+
+.answersdiv {
+	overflow:hidden;
+	-webkit-border-radius: 16px; 
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+	opacity:0.4;
+	background-color: black;
+	-webkit-transition: all .2s ease;
+  	-moz-transition: all .2s ease;
+  	-ms-transition: all .2s ease;
+  	-o-transition: all .2s ease;
+  	transition: all .2s ease;
+	margin-top: 20px;
+	color:white;
+	width: 700px;
+	font-family:"Times New Roman", Times, serif;
+	font-size: 13px;
+}
+
+.answersdiv:hover {
+	opacity:.9;
+	-webkit-transition: all .2s ease;
+  	-moz-transition: all .2s ease;
+  	-ms-transition: all .2s ease;
+  	-o-transition: all .2s ease;
+  	transition: all .2s ease;
+}
+
+.adiv {
+	overflow:hidden;
+	-webkit-border-radius: 16px; 
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+	opacity:0.4;
+	background-color: black;
+	-webkit-transition: all .2s ease;
+  	-moz-transition: all .2s ease;
+  	-ms-transition: all .2s ease;
+  	-o-transition: all .2s ease;
+  	transition: all .2s ease;
+	margin-top: 20px;
+	color:white;
+	width: 700px;
+	font-family:"Times New Roman", Times, serif;
+	font-size: 16px;
+}
+
+.adiv:hover {
+	opacity:.9;
+	-webkit-transition: all .2s ease;
+  	-moz-transition: all .2s ease;
+  	-ms-transition: all .2s ease;
+  	-o-transition: all .2s ease;
+  	transition: all .2s ease;
+}
+
+.atext {
+	height: 100px;
+	width: 400px;
+}
+
+.postpage {
+	position: absolute;
+	top: 3%;
+	left: 70%;
+	height: 65%;
+	width: 25%;
+}
+
+.error {
+	font-size: 20px;
+	font-family: "Times New Roman", Times, serif;
+	color: white;
+}
+
+.background {
+	z-index: -1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}

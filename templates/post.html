@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+<head>
+  <link rel="stylesheet" href="/static/style.css" type='text/css'/>
+</head>
+<body background='/static/questionmark.jpg'>
+  <form method='post'>
+	<div class='adiv'>
+		<h2>Post your question here</h2>
+	</div>
+	<div class='adiv'>
+		<h3>Type in the title here</h3>
+		<textarea name='title' value='{{title}}'>{{title}}</textarea>
+		{% if error %}<div class="error">{{error}}</div>{% endif %}
+	</div>
+	<div class='adiv'>
+		<h3>Type in description of the question</h3>
+		<textarea class='atext' name='description' value='{{description}}'>{{description}}</textarea>
+	</div>
+	<div class='adiv'>
+		<h3>Type in specific details of the question</h3>
+		<textarea class='atext' name='content' value='{{content}}'>{{content}}</textarea>
+	</div>
+	<input type='submit' value='Submit'/>
+  </form>
+  <img class='postpage' src='/static/postpage.jpg'/>
+</body>
+</html>
